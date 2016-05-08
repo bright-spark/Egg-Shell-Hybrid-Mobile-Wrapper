@@ -4,12 +4,12 @@ document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("touchstart", function() {
 }, false);
 
-function onDeviceReady() {
+function onDeviceReady() {    
 	var app;
 	navigator.splashscreen.hide();
 	app = new Application();
 	app.run();
-}
+    }
 
 function Application() {
 }
@@ -34,7 +34,7 @@ Application.prototype = {
 	},
  
 	openExternalInAppBrowser:  function () {
-		window.open("http://www.telerik.com", "_blank");
+		window.open("http://www.liquoricegirls.com", "_blank");
 	},
 
 	openExternalPDF:  function () {
@@ -46,6 +46,6 @@ Application.prototype = {
 	},
 
 	openExternalInSystemBrowser:function () {
-		window.open("http://wiki.apache.org/cordova/InAppBrowser", "_system");
+		window.open("http://www.liquoricegirls.com", "_system");
 	}
 }
